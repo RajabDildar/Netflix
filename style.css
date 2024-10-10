@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: poppins, Helvetica, Roboto, sans-serif; */
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+/* main section (upto line no. 200)  */
+
+:root {
+  --color: white;
+  --seccolor: rgb(229, 9, 20);
+  --thirdcolor: #b3b3b3;
+}
+
+.main {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  background-image: url("/assets/images/background.jpg");
+  background-position: center center;
+}
+
+/* .box1  */
+
+.main .box1 {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: var(--color);
+  background: rgb(0 0 0 / 40%);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+/* header  */
+
+.main .header {
+  position: absolute;
+  top: 0;
+  height: 5.5rem;
+  width: 100%;
+}
+
+.header nav {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.header nav .signInButton {
+  color: var(--color);
+  background-color: var(--seccolor);
+  border: none;
+  height: 30px;
+  width: 75px;
+  margin-left: 0.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .box1 .centerBox  */
+
+.main .box1 .centerBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 885px;
+  margin: 0 auto;
+  /* margin: auto 10vw; */
+}
+
+.centerBox h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+.centerBox p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* .centerBox form  */
+
+form {
+  margin: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.centerBox h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.getStarted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+.form-element {
+  position: relative;
+  height: 3.5rem;
+  width: 100%;
+  max-width: 23.2rem;
+  border-radius: 5px;
+  background-color: rgb(15, 16, 16, 0.6);
+}
+
+.form-element input {
+  border: 1px solid #5f5f5f;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.form-element label {
+  text-align: start;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--thirdcolor);
+  cursor: text;
+  font-size: 18px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 16px 20px 0 20px;
+  transition: all 250ms cubic-bezier(0.9, 0, 0.51, 1) 0s;
+  pointer-events: none;
+}
+
+input:focus ~ label {
+  font-size: 11px;
+  padding-top: 7px;
+}
+
+input:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.getStarted button {
+  background-color: var(--seccolor);
+  color: var(--color);
+  height: 3.5rem;
+  min-width: 13.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.getStarted button:hover,
+.header nav .signInButton:hover {
+  background-color: rgb(193, 17, 25);
+}
+
+/* main section  */
+
+.seperation {
+  background-color: #232323;
+  height: 0.5rem;
+}
+
+/* sections  */
+
+.section {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color);
+  padding: 4.5rem 0;
+  max-width: 80%;
+  margin: auto;
+}
+
+.section .secBox1 {
+  min-width: 50%;
+  width: 50%;
+}
+
+.section .secBox1 h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.section .secBox1 p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.secBox2 {
+  background-color: black;
+  position: relative;
+}
+
+img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+video {
+  position: absolute;
+  top: 21%;
+  left: 14%;
+  width: 72%;
+  height: 53%;
+}
+
+.third video {
+  top: 6%;
+  left: 17%;
+  width: 65%;
+  height: 53%;
+}
+
+.second .strangerT {
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  border-radius: 0.75rem;
+  background-color: black;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  left: 20%;
+  top: 68%;
+  /* height: 25%; */
+  height: 7.25rem;
+  width: 60%;
+  z-index: 10;
+  display: flex;
+}
+
+.second .strangerT > img {
+  object-fit: contain;
+  object-position: top left;
+  width: 25%;
+}
+
+.second .strangerT .mainpara {
+  width: 50%;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5rem;
+  text-align: start;
+}
+
+.second .strangerT .mainpara .para1 {
+  font-weight: 500;
+}
+
+.second .strangerT .mainpara .para2 {
+  color: #0077eb;
+  font-size: 0.875em;
+  font-weight: 400;
+}
+
+.second .strangerT .imgdownload {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.second .strangerT .imgdownload > img {
+  height: 60%;
+  width: 60%;
+  object-fit: contain;
+}
+
+/* faqs section  */
+
+.faqsection {
+  background-color: black;
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5em;
+  padding: 4.5rem 0;
+  max-width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.faqsection h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  min-width: 100%;
+  text-align: center;
+}
+
+.faqsection .btns {
+  background-color: rgb(45, 45, 45);
+  color: var(--color);
+  border: none;
+  padding: 1em;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: start;
+  cursor: pointer;
+}
+
+.faqsection .btn1 {
+  margin-top: 1rem;
+}
+
+.faqsection .btns:hover {
+  background-color: #414141;
+}
+
+.faqsection form h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* faqs section  */
+
+.footer {
+  color: #b3b3b3;
+  padding: 4.5rem 0;
+  max-width: 80%;
+  margin: auto;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.footer ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1rem;
+  min-width: 100%;
+}
+
+.li1 {
+  grid-column: 1/5;
+}
+
+.footer ul li a {
+  color: #b3b3b3;
+  font-family: "poppins";
+  padding-right: 1em;
+}
+
+.footer ul li {
+  list-style-type: none;
+}
+
+.footerpart2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2rem;
+}
+
+.btnbox {
+  position: relative;
+  width: 100%;
+}
+
+select {
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  padding: 0.4em 2em;
+  font-size: 1rem;
+  font-weight: 550;
+  width: 100%;
+  appearance: none;
+}
+
+.btnbox svg {
+  position: absolute;
+  top: 25%;
+  z-index: -1;
+  height: 50%;
+  width: 25%;
+}
+
+#arrowsvg {
+  left: 70%;
+  height: 50%;
+  color: white;
+}
+
+.btnbox select:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* sections  */
+
+/* media queries  */
+
+@media (max-width: 960px) {
+  /* main  */
+
+  .main {
+    height: 32rem;
+    background-size: cover;
+    background-position: left;
+  }
+
+  .main .box1 .centerBox {
+    max-width: 645px;
+  }
+
+  .centerBox h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .centerBox p {
+    font-size: 1.125rem;
+  }
+
+  .centerBox h3 {
+    font-size: 1.125rem;
+  }
+
+  .main .header nav svg {
+    height: 1.5rem;
+    width: 89px;
+  }
+
+  .box2 h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .box2 p {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  .box2 h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* main  */
+
+  /* sections  */
+
+  .section {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .second {
+    flex-wrap: wrap-reverse;
+  }
+
+  .section .secBox1 {
+    min-width: 100%;
+  }
+
+  .faqsection h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .faqsection .btns {
+    font-size: 1.125rem;
+  }
+
+  .footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    min-width: 100%;
+  }
+
+  .li1 {
+    grid-column: 1/3;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main .header nav {
+    padding: 1.5rem 3rem;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    height: 30rem;
+  }
+
+  .main .header nav {
+    padding: 1.5rem;
+  }
+
+  .main .box1 .centerBox {
+    margin: auto 8vw;
+    margin-top: 6.25rem;
+  }
+
+  .main .box1 .centerBox form {
+    margin: 24px;
+  }
+
+  .faqsection form {
+    margin: 24px;
+  }
+
+  .main .centerBox .getStarted {
+    flex-wrap: wrap;
+  }
+
+  .faqsection .getStarted {
+    flex-wrap: wrap;
+  }
+
+  .main .centerBox .getStarted .form-element {
+    max-width: 100%;
+  }
+
+  .faqsection .getStarted .form-element {
+    max-width: 100%;
+  }
+
+  .main .centerBox .getStarted button {
+    min-width: 9.875rem;
+  }
+
+  .faqsection .getStarted button {
+    min-width: 9.875rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .main .box1 .centerBox {
+    margin: auto 8vw;
+  }
+}
+
+@media (max-width: 390px) {
+  .main {
+    height: 31.5rem;
+  }
+
+  .main .box1 {
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 360px) {
+  .main {
+    height: 34rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    height: 35.5rem;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1280px) {
+  .section {
+    max-width: 100%;
+    margin: 0 2rem;
+  }
+
+  .footer {
+    max-width: 100%;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .faqsection {
+    max-width: 100%;
+    margin: 0 2rem;
+  }
+}
+
+/* media queries  */

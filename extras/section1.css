@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+:root {
+  --color: white;
+  --seccolor: rgb(229, 9, 20);
+  --thirdcolor: #b3b3b3;
+}
+
+.section {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color);
+  padding: 4.5rem 0;
+  max-width: 80%;
+  margin: auto;
+}
+
+.section .secBox1 {
+  min-width: 50%;
+}
+
+.section .secBox1 h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.section .secBox1 p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.secBox2 {
+  background-color: black;
+  position: relative;
+}
+
+img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+video {
+  position: absolute;
+  top: 21%;
+  left: 14%;
+  width: 72%;
+  height: 53%;
+}
